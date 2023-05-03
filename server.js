@@ -1,6 +1,5 @@
 const inquirer = require('inquirer');
 const mysql = require('mysql2');
-//const cTable = require('console.table');
 const db = mysql.createConnection(
     {
       host: '127.0.0.1',
@@ -13,13 +12,6 @@ const db = mysql.createConnection(
     console.log(`Connected to the EMP_DB database.`)
       
   );
-
-
-//    db.query('SELECT * FROM employee', function (err, results) {
-//         console.log(results);
-        
-//       });
- 
 const mainprompt = () => {
   inquirer.prompt([
       {
